@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>个人简历--曹昌魁</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/> 
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+<link rel="stylesheet" type="text/css" href="icomoon/style.css">
+<link rel="stylesheet" type="text/css" href="css/index.css"/> 
+<link rel="stylesheet" type="text/css" href="css/index_media.css"/> 
+<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> 
+<script src="js/jquery.easings.min.js" type="text/javascript" charset="utf-8"></script> 
+<script src="js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/addLoadEvent.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/func.js" type="text/javascript" charset="utf-8"></script> 
+</head>
+<body>
+<div>
+  <div id="top">
+    <img src="images/logo.jpg" width="60" height="60" alt="logo"/>
+    <span id="mytime"></span> 
+    <ul id="fullpageMenu"><!--ul导航栏按钮data-menuanchor为加载的页面page-->
+      <li data-menuanchor = "page1" class="active"><a href="#page1">关于我</a></li> 
+      <li data-menuanchor = "page2"><a href="#page2">前端技能</a></li> 
+      <li data-menuanchor = "page3"><a href="#page3">我的作品</a></li> 
+      <li data-menuanchor = "page4"><a href="#page4">请联系我</a></li> 
+    </ul>   
+  </div>
+  <div class="gotop">
+    <a href="javascript:void(0)" class="gotop_weixin" title="">
+      <div class="weixin-con">     
+        <p class="weixin-title">我的微信</p>    
+        <div class="weixin-pic"> 
+          <img src="images/weixin.png" alt="微信账号" height="100" width="100" /> 
+        </div>  
+      </div>
+    </a>
+    <a href="#page1" class="gotop_go" title=""></a>
+  </div>
+</div>
+
+<div id="fullpage"><!--div为容器，这里要用id名为fullpage-->
+  <div class="section section1"><!--默认的上下滚动页面，类名可改sectionSelector:".section"，不改默认类名要为section-->
+    <div class="touxiang"></div>
+    <h2 class="name">曹昌魁</h2>
+    <div class="age"><p>年龄：26岁</p></div>
+    <div class="myemail"><p>E-mail：cckuiwy@163.com</p></div> 
+    <div class="tel"><p>TEL：18317000957</p></div>
+    <div class="godown">
+      <span class="icon-circle-down"></span>
+    </div>
+  </div> 
+  <div class="section section3" id="section3"> 
+    <h3 class="secti_title" >前端技能<span class="line"> </span></h3>
+    <div class="cck_container_outer">
+      <section class="cck_container">
+        <div id="cck_carousel">
+          <figure>CSS 3</figure>
+          <figure>jQuery</figure>
+          <figure>ES6</figure>
+          <figure>Vue</figure>
+          <figure>React</figure>
+          <figure>Webpack</figure>
+          <figure>Nodejs</figure>
+          <figure>Bootstrap</figure>
+          <figure>Ajax</figure>
+        </div>
+      </section>
+    </div>
+    <div class="myskill">
+      <div class="item">
+        <h4><span class="icon-display"></span>PC端静态页面</h4>
+        <p>实现像素级还原的静态页面，注重代码优化与响应式布局</p>
+      </div>
+      <div class="item">
+        <h4><span class="icon-file-picture"></span>移动端页面</h4>
+        <p>使用动态 REM 解决移动前端自适应布局，熟悉 Bootstrap 框架</p>
+      </div>
+      <div class="item">
+        <h4><span class="icon-keyboard"></span>熟悉Vue.js、React.js</h4>
+        <p>能用 Vue-cli + Vuex + Webpack + svg 构图 + es6/7 进行页面开发，熟练使用 Node.js 命令行工具</p>
+      </div>
+    </div>
+  
+    <div class="godown">
+      <span class="icon-circle-down"></span>
+    </div>
+  </div> 
+  <div class="section section4"> 
+    <h3 class="secti_title" >我的作品<span class="line"> </span></h3>
+    <div class="container allbox">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style=" ">
+          <div class="  box box_1">
+            <div href="#" id="one" class="a_unit"></div>
+            <div href="#" id="two" class="a_unit">
+              <p class="box_title">PC端静态页面</p>
+              <p class="box_content">仿照上海学生就业创业服务网，完成页面重构，部分动态效果采用 CSS 3 新特性实现。</p> 
+              <p class="box_go"><a href="https://github.com/caochangkui/firstjobnew" target="_blank">源代码</a><a href="https://caochangkui.github.io/firstjob/" target="_blank">Demo</a></p>
+            </div>
+          </div> 
+          </div> 
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="box box_2">
+              <div href="#" id="one" class="a_unit"></div>
+                <div href="#" id="two" class="a_unit">
+                  <p class="box_title">移动端微信App</p>
+                  <p class="box_content">基于Vue.js 2.0+Vuex 打造微信界面，实现了微信聊天、搜索、通讯录、个人中心、朋友圈、设置等功能。</p>
+                  <p class="box_go"><a href="https://github.com/caochangkui/wechat-by-vue" target="_blank">源代码</a><a href="https://caochangkui.github.io/wechat-by-cck/index.html" target="_blank">Demo</a></p>
+                </div>  
+            </div> 
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+            <div class="box box_3">
+              <div href="#" id="one" class="a_unit"></div>
+                <div href="#" id="two" class="a_unit">
+                  <p class="box_title">基于Vue的音乐App</p>
+                  <p class="box_content">Vue全家桶打造移动端音乐WebAPP，实现了轮播图、音乐推荐、歌手列表、音乐搜索、注册等功能。</p>
+                  <p class="box_go"><a href="https://github.com/caochangkui/musicApp-by-vue" target="_blank">源代码</a><a href="https://caochangkui.github.io/musicApp-by-cck/index.html" target="_blank">Demo</a></p>
+                </div>
+            </div> 
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class=" box box_4">
+              <div href="#" id="one" class="a_unit"></div>
+                <div href="#" id="two" class="a_unit">
+                  <p class="box_title">其他小demo</p>
+                  <p class="box_content">
+                     1.可旋转六面体<br />
+                     2.祖玛小游戏<br />
+                     3.vue实现百度搜索<br />
+                     4.简易五子棋小游戏<br />
+                     5.基于React人员筛选<br />
+                     6.照片墙<br />
+                     7.催眠怀表<br />
+                     8.小型记事本<br />
+                     9.js实现对象拖拽<br />
+                     10.淘宝购物放大镜<br />
+                     11.无缝滚动<br />
+                  </p> 
+                  <p class="box_go"><a href="https://github.com/caochangkui/MyItems" target="_blank">源代码</a></p>
+                </div>
+            </div> 
+          </div>
+      </div>
+        
+    </div>
+    <div class="godown">
+      <span class="icon-circle-down"></span>
+    </div>
+  </div> 
+  <div class="section section5"> 
+    <h3 class="secti_title secti_title_5" >请联系我<span class="line"> </span></h3>
+    <div class="senction5_content">
+      <div class="connected_1">
+        <h4 class="myword myword_1"></h4>
+        <h4 class="myword myword_3">能坦然面对工作中的压力和挑战。</h4>
+        <h4 class="myword myword_3">热爱WEB前端，享受前端设计带来的成就感。</h4>
+        <div class="download">
+          <a href="images/resume.pdf" target="_blank" class="resume">Word版简历下载</a>
+        </div>
+      </div>
+      <div class="connected_2">
+        <div class="none">
+        </div>
+        <div class="connected_2_unit github">
+          <a href="https://github.com/caochangkui/MyItems"  target="_blank" ><img src="images/github.jpg" /></a> 
+          <a href="https://github.com/caochangkui/MyItems"  target="_blank" class="touch">Github</a> 
+        </div>
+        <div class="connected_2_unit email">
+          <a href="mailto:ppitfor@gmail.com"  target="_blank"><img src="images/email.jpg" /></a> 
+          <a href="mailto:ppitfor@gmail.com"  target="_blank" class="touch">邮箱 </a> 
+        </div>
+        <div class="connected_2_unit zhihu">
+          <a href="https://www.zhihu.com/people/caochangkui/activities"  target="_blank"><img src="images/zhihu.jpg" /></a> 
+          <a href="https://www.zhihu.com/people/caochangkui/activities"  target="_blank" class="touch">知乎</a>
+        </div>
+        <div class="connected_2_unit boke">
+          <a href="http://www.cnblogs.com/cckui/"  target="_blank"><img src="images/boke.jpg" /></a>
+          <a href="http://www.cnblogs.com/cckui/"  target="_blank" class="touch">博客</a>
+        </div>
+        <div class="connected_2_unit youdao">
+          <a href="http://note.youdao.com/noteshare?id=9392a8601d5698985d54019dd2fe868f" target="_blank"><img src="images/youdao.jpg" /></a>
+          <a href="http://note.youdao.com/noteshare?id=9392a8601d5698985d54019dd2fe868f" target="_blank" class="touch">有道笔记</a>
+        </div>
+        <div class="none">
+        </div>
+      </div>
+    </div> 
+    <div id="footer">
+      <p>Created by <span style="font-style: italic;">CaoChangkui</span></p>
+      <p class="copyright"><span>版权所有</span> <span>cckuiwy@163.com</span> Copyright @ 2017 - 2018</p>
+    </div>
+  </div> 
+  
+</div> 
+</body>
+</html>
