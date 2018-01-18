@@ -115,7 +115,7 @@
 				
 				//最后一页打字效果
 				var con  = $(".myword_1");
-		        var s = "不甘平庸，喜欢探索新技术；善于沟通，做事认真，学习和适应能力强。";  
+		        var s = "不甘平庸，有强烈的上进心和求知欲，喜欢探索新技术。";  
 		        var len = s.length;  
 		        var index = 0;  
 		        var tid = null;  
